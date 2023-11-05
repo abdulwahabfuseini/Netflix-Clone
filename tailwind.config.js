@@ -7,12 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        main: "#111000",
+        SubMain: "red",
+        transparents: "rgba(0,0,0,0.68)",
+        Transparent: "rgba(0,0,0,0.1)",
+        dry: "#151313",
+        start: "#FFB000",
+        Text: "#333333",
+        border: "#4b5563",
+        dryGray: "#E0D5D5",
+        dark: "#353232",
+        glass: "rgba(255, 255, 255, 0.1)"
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@shrutibalasa/tailwind-grid-auto-fit")
+  ],
 }

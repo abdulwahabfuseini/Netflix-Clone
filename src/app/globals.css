@@ -1,27 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Barlow+Condensed:wght@300&family=Pacifico&family=Roboto+Condensed:wght@300;400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.hoveres{
+    @apply hidden
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hovered:hover .hoveres{
+    @apply flexCol
+}
+.flexCol {
+    @apply flex flex-col justify-center items-center
+}
+.flexBox {
+    @apply flex justify-between items-center
+}
+.flex-cen {
+    @apply flex items-center
+}
+.transitions {
+    @apply transition duration-300 ease-in
 }
