@@ -4,7 +4,7 @@ import Link from "next/link";
 const RelatedMovies = ({ movie }) => {
   return (
     <div className="w-full h-full">
-      <Link href={`/movie/${movie?.id}`} key={movie.title}>
+      <Link href={`/movie/${movie?.title}`} key={movie.title}>
         <div className="relative">
           <Image
             width={600}

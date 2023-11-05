@@ -6,19 +6,11 @@ import Link from "next/link";
 import RelatedMovies from "@/components/movies/RelatedMovies";
 import Layout from "@/components/layout/Layout";
 import { MoviesData } from "@/assets/Data/MoviesData";
-import { notFound } from "next/navigation";
-
-const getSingleMovie = (single) => {
-  // const movie = MoviesData.find((movie) => movie.title === id);
-  const movie = MoviesData[single];
-  if (movie) {
-    return movie;
-  }
-  return notFound();
-};
 
 const SingleMovie = ({ params }) => {
-  const movie = getSingleMovie(params.singleMovie);
+  const title = decodeURIComponent(params.singleMovie).replace(/-/g, ' ');
+  const movie = MoviesData.find((data) => data.title.toLowerCase() === title.toLowerCase());
+
   return (
     <Layout>
       <div className="relative w-full h-full">
@@ -80,9 +72,9 @@ const SingleMovie = ({ params }) => {
           </div>
           <div className="flex items-center w-full h-20 gap-3 px-6 py-4 bg-black">
             <Image
-              width={180}
-              height={120}
-              src="/favicon.png"
+              width={78}
+              height={20}
+              src="/images/favicon.png"
               alt="Logo"
               className="object-contain h-16"
             />
