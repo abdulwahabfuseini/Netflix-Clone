@@ -1,3 +1,4 @@
+import Head from "next/head";
 import "./globals.css";
 import Provider from "@/contexts/Provider";
 
@@ -9,6 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+      </Head>
       <body>
         <Provider>{children}</Provider>
       </body>

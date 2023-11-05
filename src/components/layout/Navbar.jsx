@@ -20,11 +20,11 @@ const Navbar = () => {
         <div className="">
           <Link href="/movie">
             <Image
-              width={150}
-              height={150}
+              width={100}
+              height={100}
               src="/images/Logo/Netflix.png"
               alt="Logo"
-              className="object-contain h-12 sm:h-16 "
+              className="object-contain h-14 sm:h-16 "
             />
           </Link>
         </div>

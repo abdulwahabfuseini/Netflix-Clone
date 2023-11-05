@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="absolute top-0 left-0 w-full h-full py-3 bg-black bg-opacity-60 sm:py-0">
           <div className="px-2 lg:px-32 flexBox sm:px-10">
             <Image
-              width={180}
+              width={100}
               height={120}
               src="/images/Logo/Netflix.png"
               alt="Logo"

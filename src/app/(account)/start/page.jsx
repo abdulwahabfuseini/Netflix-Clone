@@ -13,8 +13,8 @@ const Start = () => {
       <div className="fixed top-0 left-0 flex items-center justify-between w-full px-4 text-black bg-white shadow-sm sm:px-8">
         <Link href="/">
           <Image
-            width={120}
-            height={120}
+            width={100}
+            height={100}
             src="/images/Logo/Netflix.png"
             alt="Logo"
             className="object-contain h-16"
