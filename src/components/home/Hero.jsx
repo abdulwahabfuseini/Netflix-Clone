@@ -25,7 +25,6 @@ const Hero = () => {
         <Image
          width={1800}
          height={10}
-       
           src="/images/Logo/netflixLogo.jpg"
           alt="bg"
           className="object-cover w-full h-[520px] lg:h-[710px]"

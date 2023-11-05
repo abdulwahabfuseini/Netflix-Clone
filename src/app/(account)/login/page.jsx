@@ -21,7 +21,8 @@ const Login = () => {
     <div className="w-full h-full">
       <div className="relative">
         <Image
-          fill
+          width={1800}
+         height={10}
           src="/images/Logo/netflixLogo.jpg"
           alt="bg"
           className="object-cover w-full h-[800px] md:h-screen"
@@ -30,8 +31,8 @@ const Login = () => {
           <div>
             <Link href="/">
               <Image
-                width={60}
-                height={60}
+                width={120}
+                height={120}
                 src="/images/Logo/Netflix.png"
                 alt="Logo"
                 className="object-contain h-20"
