@@ -35,12 +35,12 @@ const Login = () => {
                 height={120}
                 src="/images/Logo/Netflix.png"
                 alt="Logo"
-                className="object-contain h-20"
+                className="object-contain"
               />
             </Link>
           </div>
           <div className="flex justify-center w-full h-full px-3 py-8 sm:py-20">
-            <div className="w-full sm:w-[450px] lg:w-[400px] h-[540px] sm:h-[600px] lg:h-[560px] bg-main py-6 px-8 sm:px-14 bg-opacity-70 text-white">
+            <div className="w-full sm:w-[450px] lg:w-[400px] h-[540px] sm:h-[600px]  lg:h-[560px] bg-main py-6 px-8 sm:~px-14 bg-opacity-70 text-white">
               <Form
                 form={form}
                 name="normal_form"
